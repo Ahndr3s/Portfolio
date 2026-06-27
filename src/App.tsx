@@ -1,10 +1,14 @@
 import Background from "./shared/Background";
+import "./index.css";
 
 function App() {
   return (
     <>
-      {/* <h1>COME AS YOU ARE</h1> */}
       <Background />
+      <div className="title-container">
+
+      <h1 className="main-title">COME AS YOU ARE</h1>
+      </div>
     </>
   );
 }
