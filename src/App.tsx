@@ -1,14 +1,12 @@
 import Background from "./shared/Background";
 import "./index.css";
+import { AppRouter } from "./router/AppRouter";
 
 function App() {
   return (
     <>
       <Background />
-      <div className="title-container">
-
-      <h1 className="main-title">COME AS YOU ARE</h1>
-      </div>
+      <AppRouter />
     </>
   );
 }

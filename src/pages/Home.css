@@ -1,0 +1,17 @@
+.main-desc {
+  text-align: justify;
+  font-size: xx-large;
+  padding-left: 15vw;
+  padding-right: 15vw;
+  animation: slideLeft 0.8s ease-out forwards;
+  margin-bottom: 2vw;
+}
+
+.cmd {
+  background-color: #242424;
+  color: rgba(255, 255, 255, 0.87);
+  animation: typing 2s steps(20);
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}

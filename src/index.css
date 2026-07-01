@@ -1,5 +1,8 @@
-/* index.css */
-html, body, #root {
+@import "tailwindcss";
+
+html,
+body,
+#root {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -8,10 +11,39 @@ html, body, #root {
 }
 
 .title-container {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 10vw;
+  font-size: xx-large;
+  margin-bottom: 3vw;
 }
 
-.main-title {
-    font-family: fantasy;
+.cursor {
+  animation: cursor-blink 1s steps(2, start) infinite;
+}
+
+@keyframes cursor-blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 26ch;
+  }
 }

@@ -1,0 +1,21 @@
+.about-desc,
+.stage-container {
+  text-align: justify;
+  font-size: xx-large;
+  animation: slideLeft 0.8s ease-out forwards;
+  margin-bottom: 2vw;
+}
+
+.about-desc {
+  padding-left: 15vw;
+  padding-right: 15vw;
+}
+.stage-container {
+  margin-top: 2vw;
+  padding-left: 17vw;
+  padding-right: 17vw;
+}
+
+.stage-desc {
+  padding-top: 2vw;
+}
