@@ -2,7 +2,7 @@
 .stage-container {
   text-align: justify;
   font-size: xx-large;
-  animation: slideLeft 0.8s ease-out forwards;
+  animation: slideUp 0.8s ease-out forwards;
   margin-bottom: 2vw;
 }
 

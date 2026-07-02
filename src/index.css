@@ -28,7 +28,7 @@ body,
   }
 }
 
-@keyframes slideLeft {
+@keyframes slideUp {
   from {
     transform: translateY(50%);
     opacity: 0;
@@ -39,11 +39,34 @@ body,
   }
 }
 
+@keyframes slideLeft {
+  from {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 @keyframes typing {
   from {
     width: 0;
   }
   to {
     width: 26ch;
+    /* width: 3ch; */
   }
 }

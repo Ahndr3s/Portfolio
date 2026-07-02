@@ -1,39 +1,68 @@
 .contact-container {
+  position: relative; /* Esencial para que los elementos absolutos se alineen respecto a este contenedor */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
-  height: 100%;
+  height: 100vh; /* Fuerza al contenedor a medir el 100% del alto de la pantalla */
+  width: 100vw; /* Fuerza al contenedor a medir el 100% del ancho de la pantalla */
+  overflow: hidden; /* Evita barras de desplazamiento no deseadas por fuentes gigantes */
 }
 
 .cont-title-container {
   display: grid;
-  grid-auto-flow: column;
-  align-items: center;
-  gap: 0.5 rem;
-  z-index: -1;
+  grid-template-columns: auto 1fr;
+  align-items: stretch;
+  gap: 0.5rem;
+  width: 100%;
+  height: 100%; /* Ocupa todo el alto disponible de contact-container */
 }
 
-.cont-title-wrap {
-  font-size: 20vw;
-}
-
-.cmd-title {
-  font-size: 40vw;
-  background-color: #242424;
-  color: rgba(255, 255, 255, 0.87);
-}
-
-.btns-container {
-  background-color: transparent;
+.btns-container,
+.email-banner {
+  position: absolute;
+  z-index: 10;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.9);
   display: flex;
   flex-direction: row;
   height: fit-content;
   min-width: 10vw;
-  border-color: black;
   border: 1px solid black;
   border-radius: 10px;
   align-items: center;
   padding: 1rem;
+}
+
+.btns-container {
+  top: 94%;
+  left: 89%;
+}
+
+.email-banner {
+  top: 94%;
+  left: 11%;
+}
+
+.cont-title-wrap {
+  font-size: 18vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cmd-title {
+  background-color: #242424;
+  color: rgba(255, 255, 255, 0.87);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.cont-title {
+  font-size: 27vw;
+  /* margin: 0; */
+  inline-size: none;
 }
