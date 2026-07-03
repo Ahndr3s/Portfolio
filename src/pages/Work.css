@@ -1,5 +1,6 @@
 .card-grid {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto auto;
   flex-direction: row;
   justify-content: space-around;
 }

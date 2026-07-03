@@ -1,7 +1,9 @@
 import { Cards } from "../components/Cards";
 import "./Work.css";
+import { data, ItemData } from "../../assets/data/data";
 
 export const Work = () => {
+  
   return (
     <>
       <div className="title-container">
@@ -11,9 +13,14 @@ export const Work = () => {
       </div>
 
       <div className="card-grid">
-        <Cards />
-        <Cards />
-        <Cards />
+        {
+          data.map((card: ItemData) => (
+            <Cards
+              key={card.id}
+              item = {card}
+            />
+          ))
+        }
       </div>
     </>
   );
