@@ -1,6 +1,14 @@
 .card-grid {
-  display: grid;
-  grid-template-columns: auto auto auto;
   flex-direction: row;
   justify-content: space-around;
+  animation: slideUp 0.8s ease-out forwards;
+}
+
+.card-container {
+  margin-top: 2vw;
+}
+
+.project-type {
+  display: flex;
+  flex-wrap: wrap;
 }

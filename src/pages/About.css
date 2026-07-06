@@ -1,7 +1,6 @@
 .about-desc,
 .stage-container {
   text-align: justify;
-  font-size: xx-large;
   animation: slideUp 0.8s ease-out forwards;
   margin-bottom: 2vw;
 }
@@ -18,4 +17,23 @@
 
 .stage-desc {
   padding-top: 2vw;
+}
+
+.stage-title {
+  display: flex;
+  font-size: larger;
+}
+
+.stage-phase,
+.stage-name {
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  padding: 0.1rem;
+  width: max-content;
+  border-radius: 10px;
+  margin-right: 1vw;
+}
+
+.stage-phase {
+  text-align: center;
 }

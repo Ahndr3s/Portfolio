@@ -1,17 +1,35 @@
 .main-desc {
   text-align: justify;
-  font-size: xx-large;
-  padding-left: 15vw;
-  padding-right: 15vw;
   animation: slideLeft 0.8s ease-out forwards;
-  margin-bottom: 2vw;
+  margin-bottom: 2rem;
+  padding-top: 1rem;
 }
 
 .cmd {
+  margin-top: 2vw;
   background-color: #242424;
   color: rgba(255, 255, 255, 0.87);
-  animation: typing 2s steps(20);
+  animation: typing 2s steps(28);
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
+  max-width: 100%;
+  text-overflow: ellipsis;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
 }
+
+/* @media (max-width: 768px) {
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 10vw;
+  }
+
+  .main-desc {
+    font-size: 5vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+} */

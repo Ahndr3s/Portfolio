@@ -4,7 +4,7 @@
   left: 0;
   right: 0;
   z-index: 1000;
-  font-size: large;
+  font-size: larger;
 }
 
 .navbar-nav {
@@ -42,12 +42,58 @@
 .logo {
   background-color: #242424;
   height: 40px;
-  width: 40px;
+  width: max-content;
+  min-width: 40px;
+  padding: 0.1rem;
   border-radius: 10px;
   margin-left: 5vw;
+}
+
+.main-link-text {
+  display: flex;
+  align-items: center;
+}
+
+.typing-effect {
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  letter-spacing: 0.05em; /* Opcional: mejora el espaciado estilo terminal */
+  animation: typingTitle 0.4s steps(8, end) forwards; /* "steps(8)" hace que se escriba letra por letra */
 }
 
 .main-link-text,
 .link-text {
   color: rgba(255, 255, 255, 0.87);
+}
+
+.nav-mobile-toggle {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  /* background-color: rgba(255, 255, 255, 0.9); */
+}
+
+.menu-button {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  margin-right: 5vw;
+  border-radius: 10px;
+}
+
+.menu-button:hover,
+.menu-button.active {
+  background: white;
+  color: black;
+}
+
+.z-above {
+  position: relative;
+  z-index: 2;
 }
