@@ -39,7 +39,7 @@ export const data: ItemData[] = [
       "Educational platform with courses for teachers to integrate AI tools into their methodology",
     techStack: ["MongoDB", "React Native", "Typescript", "Tailwind"],
     gitUrl: "",
-    liveUrl: "",
+    liveUrl: "https://mockup1-vi19.onrender.com",
     img: "",
   },
   {
